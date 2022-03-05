@@ -6,7 +6,7 @@
 /*   By: calecia <calecia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 22:48:22 by calecia           #+#    #+#             */
-/*   Updated: 2022/03/03 19:28:12 by calecia          ###   ########.fr       */
+/*   Updated: 2022/03/05 16:40:45 by calecia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,9 @@ void	put_fork(t_philo *philo)
 int	philo_eat(t_philo *philo)
 {
 	unsigned int	time;
-	
-	if (time - philo->last_eat > philo->state->itime.time_to_die)
-	{
-		philo->alive = 0;
-		return (0);
-	}
+
 	take_fork(philo);
+	time = get_time();
 	philo->last_eat = time;
 	message(philo->state, philo->id, "is eating");
 	ft_usleep(philo->state->itime.time_to_eat);

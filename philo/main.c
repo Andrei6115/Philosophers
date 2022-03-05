@@ -6,7 +6,7 @@
 /*   By: calecia <calecia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 22:15:33 by calecia           #+#    #+#             */
-/*   Updated: 2022/03/03 17:23:28 by calecia          ###   ########.fr       */
+/*   Updated: 2022/03/04 18:59:07 by calecia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,6 @@ int	main(int argc, char **argv)
 	t_state		state;
 
 	count = ft_atoi(argv[1]);
-	printf("%p\n", philo);
 	state.count_iter = INT32_MAX;
 	if (argc != 5)
 	{
@@ -79,7 +78,7 @@ int	main(int argc, char **argv)
 			exit (2);
 	}
 	time.start_time = get_time();
-	time = init_itime(argc, argv);
+	time = init_itime(argv);
 	if (time.time_to_sleep <= 0 || time.time_to_die <= 0
 		|| time.time_to_eat <= 0 || state.count_iter <= 0)
 	{

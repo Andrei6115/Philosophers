@@ -6,7 +6,7 @@
 /*   By: calecia <calecia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 21:23:28 by calecia           #+#    #+#             */
-/*   Updated: 2022/03/03 18:01:40 by calecia          ###   ########.fr       */
+/*   Updated: 2022/03/04 18:59:19 by calecia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ struct timeval	start_time(void);
 void			time_print(struct timeval tv, int num_philo, char *str);
 int				time_equal(struct timeval tv, struct timeval tv2);
 //t_time			init_time(int argc, char **argv);
-t_itime			init_itime(int argc, char **argv);
+t_itime			init_itime(char **argv);
 struct timeval	time_dist(struct timeval tv, struct timeval tv2);
 
 int				ft_atoi(const char *str);

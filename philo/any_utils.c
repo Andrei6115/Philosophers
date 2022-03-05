@@ -6,7 +6,7 @@
 /*   By: calecia <calecia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 17:25:47 by calecia           #+#    #+#             */
-/*   Updated: 2022/03/02 22:16:47 by calecia          ###   ########.fr       */
+/*   Updated: 2022/03/04 18:58:44 by calecia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_usleep(unsigned int ms)
 		usleep(ms * 3);
 }
 
-t_itime	init_itime(int argc, char **argv)
+t_itime	init_itime(char **argv)
 {
 	t_itime	time;
 
